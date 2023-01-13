@@ -1,0 +1,13 @@
+{
+    "port": "8080",
+    "database": {
+        "url": "mongodb://localhost:27017",
+        "dbName": "api-abuse-protection"
+    },
+    "globalReqLimitPerHour": 20,
+    "tokens": {
+        "bd097cdb00636aea29f05c9deafd32937bbe14b6030d0a18309f5085f3474219003e068afedfaf60ab0cd2833c88ad14" : {
+            "reqLimitPerHour": 200
+        }
+    }
+}

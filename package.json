@@ -1,0 +1,25 @@
+{
+  "name": "api-abuse-protection",
+  "version": "1.0.0",
+  "description": "Goals:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarangoniEduardo/api-abuse-protection.git"
+  },
+  "author": "Eduardo Marangoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarangoniEduardo/api-abuse-protection/issues"
+  },
+  "homepage": "https://github.com/MarangoniEduardo/api-abuse-protection#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongodb": "^4.13.0"
+  }
+}

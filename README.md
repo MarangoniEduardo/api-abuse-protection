@@ -1,5 +1,21 @@
 # api-abuse-protection
 
+To setup mongo (MacOS):
+
+```
+brew tap mongodb/brew
+brew update
+brew install mongodb-community
+brew services start mongodb-community@6.0
+mongod --dbpath=/data
+````
+
+To stop (MacOS):
+
+```
+brew services stop mongodb-community@6.0
+```
+
 Goals:
 
 We need to restrict the usage of our API to prevent users from abusing our system. These are the conditions/requirements:
