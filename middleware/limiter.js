@@ -28,8 +28,6 @@ module.exports = async function (req, res, next) {
             }
         }
 
-        // console.log(await collection.find({ token: requestToken, ...timeQuery }).sort({ createdAt: -1 }).toArray());
-
         if (!valid) {
             nextReqAt = moment().endOf(intervalUnit).format("DD/MM/YYYY HH:mm:ss");
             return ResponseHelper.buildCustomErrorResponse(res, 429, `Hourly request limit reached (${limit} reqs), you can send requests again after ${nextReqAt}`);
