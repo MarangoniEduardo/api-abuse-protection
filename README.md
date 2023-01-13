@@ -10,11 +10,44 @@ brew services start mongodb-community@6.0
 mongod --dbpath=/data
 ````
 
-To stop (MacOS):
+To kill mongo (MacOS):
 
 ```
 brew services stop mongodb-community@6.0
 ```
+
+To start API:
+
+```
+    npm install
+```
+to install the dependencies
+
+```
+    npm start
+```
+to run the service
+
+
+To request:
+
+private route:
+token -> bd097cdb00636aea29f05c9deafd32937bbe14b6030d0a18309f5085f3474219003e068afedfaf60ab0cd2833c88ad14
+
+```
+curl --request GET \
+  --url http://localhost:8080/private \
+  --header 'token: bd097cdb00636aea29f05c9deafd32937bbe14b6030d0a18309f5085f3474219003e068afedfaf60ab0cd2833c88ad14'
+```
+
+public route:
+
+```
+curl --request GET \
+  --url http://localhost:8080/public
+```
+
+Task:
 
 Goals:
 
